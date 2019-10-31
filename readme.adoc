@@ -1,0 +1,22 @@
+= Sample JAX-WS Web Service
+
+[source,BASH]
+----
+wsdl2java -client -d src/generated-sources src/main/resources/SampleWebService.wsdl
+----
+
+== WebService Custom Work Item Handler
+
+=== Input Parameters
+
+* Namespace http://examples.batigerteam.redhat.com/
+* Operation sayHallo
+* Url http://localhost:8080/sample-webservice/SampleWebService?wsdl
+* Endpoint http://localhost:8080/sample-webservice/SampleWebService
+* Interface SampleWebServiceService
+* Mode SYNC
+* Parameter
+
+=== Output Parameters
+
+* Result pResult
